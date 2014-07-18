@@ -11,7 +11,7 @@ Discourse.Dialect.inlineBetween({
 		
 		au.controls = true;
 		
-        return [au];
+        return au;
 	
   }
 });
