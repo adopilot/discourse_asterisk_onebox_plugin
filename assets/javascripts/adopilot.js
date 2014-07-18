@@ -4,10 +4,10 @@ Discourse.Dialect.inlineBetween({
   
   emitter: function() {
     
-		var audioElement = document.createElement('audio');
-		audioElement.setAttribute('src', 'http://rootserver.rosseaux.net/demoscene/compos/exchipo/02/audio/ogg/27546_Rocco.ogg');
-	
-        return audioElement;
+		var iframe = document.createElement('iframe');
+    iframe.style.display = "none";
+    iframe.src = 'https://www.google.com/calendar/embed?src=fekir8nfrb6ibbfqhbp3jtgifo%40group.calendar.google.com&ctz=Europe/Belgrade';
+        return iframe;
 	
   }
 });
