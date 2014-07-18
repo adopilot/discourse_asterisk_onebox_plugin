@@ -1,8 +1,8 @@
 Discourse.Dialect.inlineBetween({
   start: '$$$',
   stop: '$$$',
-  rawContents: true,
-  emitter: function(matches) {
+  
+  emitter: function() {
     
 		
 		var aud = new Audio();
