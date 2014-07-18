@@ -4,15 +4,16 @@
 # authors: Admir Hodžić
 #register_asset "javascripts/adopilot.js", :server_side
 
+Onebox::Engine::WhitelistedGenericOnebox.whitelist.push "google.com"
+
 module Onebox
   module Engine
-    class AdoAudioOnebox
+    class GoogleCalendarOnebox
       include Engine
-	  
-    matches_regexp /!!!.+/
+      matches_regexp /^https?:\/\/(?:www\.)?google\.com\/calendar\/embed\?.+/
 
       def to_html
-        "<audio controls><source src='http://172.16.0.54/vbox-msg/701/INBOX/msg0010.wav'><a href='http://172.16.0.54/vbox-msg/701/INBOX/msg0010.wav'>http://172.16.0.54/vbox-msg/701/INBOX/msg0010.wav</a></audio>"
+        "<iframe src='#{@url}' style='border-width:0' frameborder='0' scrolling='no' width='100%'></iframe>"
       end
     end
   end
