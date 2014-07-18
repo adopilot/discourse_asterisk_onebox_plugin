@@ -4,14 +4,15 @@ Discourse.Dialect.inlineBetween({
   rawContents: true,
   emitter: function(matches) {
     
-		var commitId = matches[1];
 		
-		var au = new Audio("http://rootserver.rosseaux.net/demoscene/compos/exchipo/02/audio/ogg/27546_Rocco.ogg");
-
+		var aud = new Audio();
+		aud.src = 'http://rootserver.rosseaux.net/demoscene/compos/exchipo/02/audio/ogg/27546_Rocco.ogg';
+ 
+		aud.controls = true;
+		aud.play();
 		
-		au.controls = true;
 		
-        return au;
+        return aud;
 	
   }
 });
