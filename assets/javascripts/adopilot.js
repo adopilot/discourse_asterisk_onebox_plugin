@@ -4,15 +4,10 @@ Discourse.Dialect.inlineBetween({
   
   emitter: function() {
     
-		
-		var aud = new Audio();
-		aud.src = 'http://rootserver.rosseaux.net/demoscene/compos/exchipo/02/audio/ogg/27546_Rocco.ogg';
- 
-		aud.controls = true;
-		aud.play();
-		
-		
-        return aud;
+		var audioElement = document.createElement('audio');
+		audioElement.setAttribute('src', 'http://rootserver.rosseaux.net/demoscene/compos/exchipo/02/audio/ogg/27546_Rocco.ogg');
+	
+        return audioElement;
 	
   }
 });
