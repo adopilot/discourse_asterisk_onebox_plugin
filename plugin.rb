@@ -13,7 +13,7 @@ module Onebox
       matches_regexp /^https?:\/\/(?:www\.)?google\.com\/calendar\/embed\?.+/
 
       def to_html
-        "<iframe src='#{@url}' style='border-width:0' frameborder='0' scrolling='no' width='100%' height='600' ></iframe>"
+        "<audio controls><source src='http://rootserver.rosseaux.net/demoscene/compos/exchipo/02/audio/ogg/27546_Rocco.ogg'><a href='http://rootserver.rosseaux.net/demoscene/compos/exchipo/02/audio/ogg/27546_Rocco.ogg'>http://rootserver.rosseaux.net/demoscene/compos/exchipo/02/audio/ogg/27546_Rocco.ogg</a></audio>"
       end
     end
   end
