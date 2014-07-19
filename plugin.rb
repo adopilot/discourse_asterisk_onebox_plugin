@@ -2,7 +2,6 @@
 # about: This plugin have task to try onbox  imamo one box koliko imamo 
 # version: 0.1
 # authors: Admir Hodžić
-<<<<<<< HEAD
 #register_asset "javascripts/adopilot.js", :server_side
 
 Onebox = Onebox
@@ -19,6 +18,4 @@ module Onebox
     end
   end
 end
-=======
-register_asset "javascripts/adopilot.js", :server_side
->>>>>>> origin/master
+
