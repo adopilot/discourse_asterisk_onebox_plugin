@@ -1,17 +1,13 @@
 Discourse.Dialect.inlineBetween({
   start: '$$$',
   stop: '$$$',
-  rawContents: true,
-  emitter: function(matches) {
+  
+  emitter: function() {
     
-		var commitId = matches[1];
-		
-		var au = new Audio("http://rootserver.rosseaux.net/demoscene/compos/exchipo/02/audio/ogg/27546_Rocco.ogg");
-
-		
-		au.controls = true;
-		
-        return au;
+		var iframe = document.createElement('iframe');
+    iframe.style.display = "none";
+    iframe.src = 'https://www.google.com/calendar/embed?src=fekir8nfrb6ibbfqhbp3jtgifo%40group.calendar.google.com&ctz=Europe/Belgrade';
+        return [iframe];
 	
   }
 });
