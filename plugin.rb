@@ -6,20 +6,18 @@
 
 Onebox = Onebox
 
-Onebox::Engine::WhitelistedGenericOnebox.whitelist.push "172.16.0.54"
+Onebox::Engine::WhitelistedGenericOnebox.whitelist.push "$$$"
 
 module Onebox
   module Engine
     class GoogleCalendarOnebox
       include Engine
 	  
-	
-	  
       matches_regexp /d+\$\$\$
 	  
-	  ado = String.try_convert(@url)
 	  
-	  ado1 ="msg"+ado[0, s.length - 3].rjust(4, '0')
+	  
+	  ado1 ="msg"+@url[0, s.length - 3].rjust(4, '0')
 	  
 	  
       def to_html
