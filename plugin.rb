@@ -13,7 +13,9 @@ module Onebox
     class GoogleCalendarOnebox
       include Engine
 	  
-      matches_regexp /\d+\$\$\$
+	  REGEX = /\d+\$\$\$/
+      
+	  matches_regexp = REGEX
 	  
 	  
 	  ado1 ="msg"+@url[0, 2].rjust(4, '0')
