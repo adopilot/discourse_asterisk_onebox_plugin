@@ -6,14 +6,24 @@
 
 Onebox = Onebox
 
+Onebox::Engine::WhitelistedGenericOnebox.whitelist.push "172.16.0.54"
+
 module Onebox
   module Engine
     class GoogleCalendarOnebox
       include Engine
-      matches_regexp /^https?:\/\/(?:www\.)?google\.com\/calendar\/embed\?.+/
-
+	  
+	
+	  
+      matches_regexp \$\$\$\d+\$\$\$
+	  
+	  ado = String.try_convert(@url)
+	  
+	  ado1 ="msg"+ado[0, s.length - 3].rjust(4, '0')
+	  
+	  
       def to_html
-        "<audio controls><source src='http://rootserver.rosseaux.net/demoscene/compos/exchipo/02/audio/ogg/27546_Rocco.ogg'><a href='http://rootserver.rosseaux.net/demoscene/compos/exchipo/02/audio/ogg/27546_Rocco.ogg'>http://rootserver.rosseaux.net/demoscene/compos/exchipo/02/audio/ogg/27546_Rocco.ogg</a></audio>"
+        "<audio controls><source src='http://172.16.0.54/vbox-msg/771/INBOX/#{ado1}.wav'><a href='http://172.16.0.54/vbox-msg/771/INBOX/#{ado1}.wav'>http://172.16.0.54/vbox-msg/771/INBOX/#{ado1}.wav</a></audio>"
       end
     end
   end
