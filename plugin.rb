@@ -15,7 +15,7 @@ module Onebox
 	  
 	
 	  
-      matches_regexp \$\$\$\d+\$\$\$
+      matches_regexp /d+\$\$\$
 	  
 	  ado = String.try_convert(@url)
 	  
