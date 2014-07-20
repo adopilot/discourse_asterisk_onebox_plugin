@@ -17,8 +17,11 @@ module Onebox
       
 	  matches_regexp = REGEX
 	  
+	  def id
+        @url.match(REGEX)[1]
+      end
 	  
-	  ado1 ="msg"+@url[0, 2].rjust(4, '0')
+	  ado1 ="msg"+id[0, 2].rjust(4, '0')
 	  
 	  
       def to_html
