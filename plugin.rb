@@ -23,7 +23,7 @@ module Onebox
 	  
 	  
       def to_html
-        "<audio controls><source src='http://172.16.0.54/vbox-msg/771/INBOX/#{ado1}.wav'><a href='http://172.16.0.54/vbox-msg/771/INBOX/#{ado1}.wav'>http://172.16.0.54/vbox-msg/771/INBOX/#{ado1}.wav</a></audio>"
+        "<audio controls><source src='http://172.16.0.54/vbox-msg/771/INBOX/'#{ado1}'.wav'><a href='http://172.16.0.54/vbox-msg/771/INBOX/'#{ado1}'.wav'>http://172.16.0.54/vbox-msg/771/INBOX/'#{ado1}'.wav</a></audio>"
       end
     end
   end
