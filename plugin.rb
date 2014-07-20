@@ -6,7 +6,7 @@
 
 Onebox = Onebox
 
-Onebox::Engine::WhitelistedGenericOnebox.whitelist.push "$$$"
+Onebox::Engine::WhitelistedGenericOnebox.whitelist.push "172.16.0.54"
 
 module Onebox
   module Engine
