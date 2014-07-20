@@ -15,9 +15,8 @@ module Onebox
 	  
       matches_regexp /\d+\$\$\$
 	  
-	  ado = String.new(@url)
 	  
-	  ado1 ="msg"+ado[0, ado.length - 3].rjust(4, '0')
+	  ado1 ="msg"+@url[0, 2].rjust(4, '0')
 	  
 	  
       def to_html
