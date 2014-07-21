@@ -12,11 +12,21 @@ module Onebox
   module Engine
     class GoogleCalendarOnebox
       include Engine
-      matches_regexp /^https?:\/\/(?:www\.)?google\.com\/calendar\/embed\?.+/
-
-      def to_html
-        "<iframe src='#{@url}' style='border-width:0' frameborder='0' scrolling='no' width='100%'></iframe>"
+      REGEX = /http:\/\/asterix\.robot\.ba\/(\d+)\/(\d+)\//
+	  matches_regexp REGEX
+	  
+	  def folder
+		@url.match(REGEX)[1]
+	  end
+	  
+	  def msgNum
+	    @url.match(REGEX)[2]
+	  end
+	  
+      def to_html		
+        "<b>#{@folder} - #{@msgNum}</b>"
       end
+	  
     end
   end
 end
