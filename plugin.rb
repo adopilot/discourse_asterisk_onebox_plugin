@@ -10,10 +10,13 @@ Onebox::Engine::WhitelistedGenericOnebox.whitelist.push "172.16.0.54"
 
 module Onebox
   module Engine
-    class GoogleCalendarOnebox
+    class FooBarOnebox
       include Engine
+	  
+	   matches_regexp /!!!(\d+)!!!/
+	  
       def to_html
-        "<audio controls><source src='http://172.16.0.54/vbox-msg/771/INBOX/'#{ado1}'.wav'><a href='http://172.16.0.54/vbox-msg/771/INBOX/'#{ado1}'.wav'>http://172.16.0.54/vbox-msg/771/INBOX/'#{ado1}'.wav</a></audio>"
+        "<b>#{@url}</b>"
       end
     end
   end
