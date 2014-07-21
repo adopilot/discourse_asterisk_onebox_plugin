@@ -10,15 +10,13 @@ Onebox::Engine::WhitelistedGenericOnebox.whitelist.push "172.16.0.54"
 
 module Onebox
   module Engine
-    class FooBarOnebox
+    class GoogleCalendarOnebox
       include Engine
-	  
-	   matches_regexp /!!!(\d+)!!!/
-	  
+      matches_regexp /^https?:\/\/(?:www\.)?google\.com\/calendar\/embed\?.+/
+
       def to_html
-        "<b>#{@url}</b>"
+        "<iframe src='#{@url}' style='border-width:0' frameborder='0' scrolling='no' width='100%'></iframe>"
       end
     end
   end
 end
-
