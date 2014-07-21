@@ -24,7 +24,7 @@ module Onebox
 	  end
 	  
       def to_html		
-        "<b>#{@folder} - #{@msgNum}</b>"
+        "<b>#{folder} - #{msgNum}</b>"
       end
 	  
     end
