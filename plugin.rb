@@ -15,7 +15,7 @@ module Onebox
       REGEX = /http:\/\/vidi\.hr\/(\d+)\/(\d+)\//
 	  matches_regexp REGEX
 	  
-	   def folder
+	   def folderPath
 		@url.match(REGEX)[1]
 	  end
 	  
@@ -24,7 +24,7 @@ module Onebox
 	  end
 	  
       def to_html		
-        "<b>#{folder} - #{msgNum}</b>"
+         "<audio controls><source src='http://172.16.0.54/vbox-msg/#{folderPath}/INBOX/msg000#{msgNum}.wav'><a href='http://172.16.0.54/vbox-msg/#{folderPath}/INBOX/msg000#{msgNum}.wav'>http://172.16.0.54/vbox-msg/#{folderPath}/INBOX/msg000#{msgNum}.wav</a></audio>"
       end
 	  
 	  
