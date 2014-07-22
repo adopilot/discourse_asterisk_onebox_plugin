@@ -6,13 +6,13 @@
 
 Onebox = Onebox
 
-Onebox::Engine::WhitelistedGenericOnebox.whitelist.push "ado.ba"
+Onebox::Engine::WhitelistedGenericOnebox.whitelist.push "172.16.0.54"
 
 module Onebox
   module Engine
     class GoogleCalendarOnebox
       include Engine
-      REGEX = /http:\/\/ado\.ba\/(\d+)\/(\d+)\//
+      REGEX = /http:\/\/172\.16\.0\.54\/(\d+)\/(\d+)\//
 	  matches_regexp REGEX
 	  
 	  
