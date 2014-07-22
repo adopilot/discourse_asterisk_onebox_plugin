@@ -15,8 +15,19 @@ module Onebox
       REGEX = /http:\/\/vidi\.hr\/(\d+)\/(\d+)\//
 	  matches_regexp REGEX
 	  
+	   def folder
+		@url.match(REGEX)[1]
+	  end
+	  
+	  def msgNum
+	    @url.match(REGEX)[2]
+	  end
 	  
       def to_html		
+        "<b>#{@folder} hoces ili neces da pastas ovo #{@msgNum}</b>"
+      end
+	  
+      def ado
          "<audio controls><source src='http://172.16.0.54/vbox-msg/701/INBOX/msg0000.wav'><a href='http://172.16.0.54/vbox-msg/701/INBOX/msg0000.wav'>http://172.16.0.54/vbox-msg/701/INBOX/msg0000.wav</a></audio>"
       end
 	  
