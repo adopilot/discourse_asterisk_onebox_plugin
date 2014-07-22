@@ -15,16 +15,10 @@ module Onebox
       REGEX = /http:\/\/asterix\.robot\.ba\/(\d+)\/(\d+)\//
 	  matches_regexp REGEX
 	  
-	  def @folder
-		@url.match(REGEX)[1]
-	  end
-	  
-	  def @msgNum
-	    @url.match(REGEX)[2]
-	  end
+
 	  
       def to_html		
-        "<b>Folder: #{@folder} ado  Msg num: #{@msgNum}</b>"
+        "<b>Folder: king kong</b>"
       end
 	  
     end
