@@ -6,13 +6,13 @@
 
 Onebox = Onebox
 
-Onebox::Engine::WhitelistedGenericOnebox.whitelist.push "vidi.hr/"
+Onebox::Engine::WhitelistedGenericOnebox.whitelist.push "ado.ba"
 
 module Onebox
   module Engine
     class GoogleCalendarOnebox
       include Engine
-      REGEX = /http:\/\/vidi\.hr\/(\d+)\/(\d+)\//
+      REGEX = /http:\/\/ado\.ba\/(\d+)\/(\d+)\//
 	  matches_regexp REGEX
 	  
 	  
