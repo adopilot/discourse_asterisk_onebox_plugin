@@ -4,11 +4,9 @@ Discourse.Dialect.inlineBetween({
   
   emitter: function() {
     
-		var iframe = document.createElement('iframe');
-    iframe.style.display = "none";
-
-    iframe.src = 'https://www.google.com/calendar/embed?src=fekir8nfrb6ibbfqhbp3jtgifo%40group.calendar.google.com&ctz=Europe/Belgrade';
-        return [iframe];
 	
+	var ado = $"<audio controls><source src='http://172.16.0.54/vbox-msg/701/INBOX/msg0000.wav'><a href='http://172.16.0.54/vbox-msg/701/INBOX/msg0000.wav'>http://172.16.0.54/vbox-msg/701/INBOX/msg0000.wav</a></audio>";
+	
+	return ado;
   }
 });
