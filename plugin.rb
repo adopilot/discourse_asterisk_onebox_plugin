@@ -24,7 +24,7 @@ module Onebox
 	  end
 	  
       def to_html		
-         "<audio controls><source src='http://172.16.0.54/vbox-msg/#{folderPath}/INBOX/msg000#{msgNum}.wav'><a href='http://172.16.0.54/vbox-msg/#{folderPath}/INBOX/msg000#{msgNum}.wav'>http://172.16.0.54/vbox-msg/#{folderPath}/INBOX/msg000#{msgNum}.wav</a></audio>"
+         "<audio controls><source src='http://172.16.0.54/vbox-msg/'#{folderPath}'/INBOX/msg000'#{msgNum}'.wav'><a href='http://172.16.0.54/vbox-msg/'#{folderPath}'/INBOX/msg000'#{msgNum}'.wav'>http://172.16.0.54/vbox-msg/'#{folderPath}'/INBOX/msg000'#{msgNum}'.wav</a></audio>"
       end
 	  
 	  
