@@ -6,7 +6,7 @@
 
 Onebox = Onebox
 
-Onebox::Engine::WhitelistedGenericOnebox.whitelist.push "172.16.0.54"
+Onebox::Engine::WhitelistedGenericOnebox.whitelist.push "asterix.robot.ba"
 
 module Onebox
   module Engine
