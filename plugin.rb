@@ -24,10 +24,9 @@ module Onebox
 	  end
 	  
       def to_html		
-        "<b>#{@folder} hoces ili neces da pastas ovo #{@msgNum}</b>"
+        "<b>#{folder} - #{msgNum}</b>"
       end
 	  
-
 	  
     end
   end
