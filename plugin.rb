@@ -6,13 +6,13 @@
 
 Onebox = Onebox
 
-Onebox::Engine::WhitelistedGenericOnebox.whitelist.push "172.16.0.54"
+Onebox::Engine::WhitelistedGenericOnebox.whitelist.push "vidi.hr"
 
 module Onebox
   module Engine
     class GoogleCalendarOnebox
       include Engine
-      REGEX = /http:\/\/172\.16\.0\.54\/(\d+)\/(\d+)\//
+      REGEX = /http:\/\/vidi\.hr\/(\d+)\/(\d+)\//
 	  matches_regexp REGEX
 	  
 	  
